@@ -285,11 +285,11 @@ EXERCISE 3:
 
 ***Your solution goes after this line***
 var arr  =  ['banana','apple','orange']
-arr [1] = 'dvd-player';
-console.log(arr);
-
 var arr2 =  ['tv','dvd-player','playstation']
-arr2 [1] = 'apple';
+var arr3 = 'apple'
+arr [1] = arr2 [1]
+arr2 [1] = arr3
+console.log(arr);
 console.log(arr2);
 
 EXERCISE 4:
@@ -342,7 +342,7 @@ EXERCISE 7:
 ***Your solution goes after this line***
 var arr = ["one","two","three","four"]
 var arr2 = [];
-arr2.push(arr);
+arr2.push(arr[0,1,2,3]);
 console.log(arr2);
 
 EXERCISE 8:
