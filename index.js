@@ -67,7 +67,7 @@ EXERCISE 4:
 var age = 29;
 var end = 93;
 var teapd = 2;
-var teaTotal = ([end - age]*365)* 2
+var teaTotal = ((end - age)*365)* 2
 console.log('I will need at least ' + teaTotal + ' of tea-bags for this lifetime');
 
 EXERCISE 5:
@@ -230,5 +230,5 @@ var far = (tempc*1.8+32);
 console.log(tempc + "°C is " + far + "°F");
 
 var tempf = 113;
-var cel = [(tempf-32)/1.8];
+var cel = ((tempf-32)/1.8);
 console.log(tempf + "°F is " + cel + "°C");
