@@ -232,3 +232,273 @@ console.log(tempc + "°C is " + far + "°F");
 var tempf = 113;
 var cel = ((tempf-32)/1.8);
 console.log(tempf + "°F is " + cel + "°C");
+
+
+
+
+/////////////////////////
+
+
+
+
+
+EXERCISE 1:
+
+    // take the value car from the below array and assign it to a new array called arr2 as its first element.
+    //Then console.log arr2.
+    // is should return ['car']
+    var arr = ['milk','cheese','car','lime']
+
+***Your solution goes after this line***
+//var arr = ['milk','cheese','car','lime']
+var arr = ['milk','cheese','car','lime']
+var arr2 = [];
+arr2 = arr2.concat(arr[2]);
+console.log(arr2);
+
+EXERCISE 2:
+
+    // take all values from arr and place them in a new array called newArr but in reversed order without using .reverse() method
+    var arr = ['milk','cheese','car','lime']
+    
+    //then console.log newArr
+    // expected output newArr = ['lime','car','cheese','milk']
+
+***Your solution goes after this line***
+var arr = ['milk','cheese','car','lime']
+var newArr = arr.reverse(arr);
+console.log(newArr);
+
+EXERCISE 3:
+
+    //swap the value apple from arr with the value dvd-player from arr2
+    //starting point
+    var arr  =  ['banana','apple','orange']
+    var arr2 =  ['tv','dvd-player','playstation']
+    
+    //expected output
+    //arr
+    //["banana", "dvd-player", "orange"]
+    
+    //arr2
+    //["tv", "apple", "playstation"]
+
+***Your solution goes after this line***
+var arr  =  ['banana','apple','orange']
+arr [1] = 'dvd-player';
+console.log(arr);
+
+var arr2 =  ['tv','dvd-player','playstation']
+arr2 [1] = 'apple';
+console.log(arr2);
+
+EXERCISE 4:
+
+    //using splice remove the third element (bread) of the array below:
+    //then console.log the array
+    
+    var arr = ['cheese','salame','bread','water','pizza']
+    
+    //expected output:arr = ['cheese','salame','water','pizza']
+
+***Your solution goes after this line***
+var arr = ['cheese','salame','bread','water','pizza']
+arr.splice(2,1);
+console.log(arr);
+
+EXERCISE 5:
+
+    //using the splice method remove the first and last element of the below array.
+    //car and toothbrush
+    //then console.log the array.
+    var arr = ['car','soap','banana','tv','toothbrush']
+    //expected output arr = ['soap','banana','tv']
+
+***Your solution goes after this line***
+var arr = ['car','soap','banana','tv','toothbrush']
+arr.splice(0,1)
+arr.splice(-1)
+console.log(arr);
+
+EXERCISE 6:
+
+    //using array.splice remove all elements from the below array then console.log the array
+    var arr =[1,2,3,4,5,6,7,8,9,0,3,4,523,44,3454]
+    //expected output arr =[]
+
+***Your solution goes after this line***
+var arr =[1,2,3,4,5,6,7,8,9,0,3,4,523,44,3454]
+arr.splice(0);
+console.log(arr);
+
+EXERCISE 7:
+
+    //using push take all elements from arr and push them to a new variable called arr2
+    //then console.log arr2
+    
+    var arr = ["one","two","three","four"]
+    //expected output arr2 = ["one","two","three","four"]
+
+***Your solution goes after this line***
+var arr = ["one","two","three","four"]
+var arr2 = [];
+arr2.push(arr);
+console.log(arr2);
+
+EXERCISE 8:
+
+    //using array.push take the third and fifth elements of arr and push them to a new variable called arr2
+    
+    // Psych and Gotham
+    
+    //then console.log arr2
+    
+    
+    var arr = ['Breaking bad','WestWorld','Psych','Games of Thrones','Gotham','Spartacus','Dexter','Office']
+    
+    //expected output arr2 = ["Psych", "Gotham"]
+
+***Your solution goes after this line***
+var arr = ['Breaking bad','WestWorld','Psych','Games of Thrones','Gotham','Spartacus','Dexter','Office']
+var arr2 = [];
+arr2.push(arr[2]);
+arr2.push(arr[4]);
+console.log(arr2);
+
+EXERCISE 9:
+
+    //using array.concat create a new array called arr2 which takes all properties from arr
+    // then remove the last one using splice.
+    //last thing console.log arr2
+    var arr = ['Breaking bad','WestWorld','Psych','Games of Thrones','Gotham','Spartacus','Dexter','Office']
+    
+    //expected output arr2 = ['Breaking bad','WestWorld','Psych','Games of Thrones','Gotham','Spartacus','Dexter']
+
+***Your solution goes after this line***
+var arr = ['Breaking bad','WestWorld','Psych','Games of Thrones','Gotham','Spartacus','Dexter','Office']
+var arr2 = [];
+
+arr2 = arr2.concat(arr);
+console.log(arr2);
+
+arr.splice(0);
+console.log(arr);
+
+
+EXERCISE 10:
+
+    //using concat take apple and orange properties of arr1 and assign them to a new array called arr2.
+    // then console.log both arr and arr2
+    
+    var arr = ['banana','kiwi','orange','apple','banana']
+    
+    //expected output arr2 = ["orange","apple"]
+
+***Your solution goes after this line***
+var arr = ['banana','kiwi','orange','apple','banana']
+var arr2 = [];
+arr2 = arr2.concat(arr[2]);
+arr2 = arr2.concat(arr[3]);
+console.log(arr);
+console.log(arr2);
+
+EXERCISE 11:
+
+    //using indexof find the index of the car and the index of the watch and console.log them
+    var arr = ['glass','car','watch','sofa','macbook']
+    
+    //expected output  : 
+    //1
+    //2
+
+***Your solution goes after this line***
+var arr = ['glass','car','watch','sofa','macbook']
+console.log(arr.indexOf('car'));
+console.log(arr.indexOf('watch'));
+
+EXERCISE 12:
+
+    //using indexof check if the following colors are in the array and if they are you should console.log true, and if they are not you should console.log false.
+    
+    //green, red, pink,
+    
+    var arr = ['green','red','black','blue','brown','yellow','purple']
+    //expected output
+    
+    //true
+    //true
+    //false
+
+***Your solution goes after this line***
+var arr = ['green','red','black','blue','brown','yellow','purple']
+console.log(arr.indexOf('green')>-1);
+console.log(arr.indexOf('red')>-1);
+console.log(arr.indexOf('pink')>-1);
+
+EXERCISE 13:
+
+    //now do the same exercise using the method includes only this time you should console.log false if the color is there and true if it's not!
+    var arr = ['green','red','black','blue','brown','yellow','purple']
+    //green, red, pink,
+    
+    //expected output
+    //false
+    //false
+    //true
+
+***Your solution goes after this line***
+var arr = ['green','red','black','blue','brown','yellow','purple']
+console.log(!arr.includes('green'));
+console.log(!arr.includes('red'));
+console.log(!arr.includes('pink'));
+
+EXERCISE 14:
+
+    // Using the string methods split and join remove the "," from the below string
+    var str = 'I,Really,Like,Pizza'
+    //then console.log the modified string which should ideally look like:
+    //expected output : I Really Like Pizza"
+
+***Your solution goes after this line***
+var str = 'I,Really,Like,Pizza'
+str = str.split(',').join(' ');
+console.log(str);
+
+EXERCISE 15:
+
+    //Still using split and join remove the unwanted characters from our word so that it will be just banana, then console.log word
+    var word = 'ba_*!*_na_*!*_na';
+    
+    
+    //expected output banana
+    
+
+***Your solution goes after this line***
+var word = 'ba_*!*_na_*!*_na';
+word = word.split('_*!*_').join('');
+console.log(word);
+
+EXERCISE 16
+
+    //check the following and console.log true if they are arrays and false if they are not, you will need to research a bit as this hasn't been covered.
+    var one   = {name:'antonello'}
+    var two   = ['name', 'antonello']
+    var three = [[],[],{},"antonello",3,function(){}]
+    
+    //expected output 
+    //false
+    //true
+    //true
+
+***Your solution goes after this line***
+var one   = {name:'antonello'}
+console.log(one.constructor === Array);
+
+var two   = ['name', 'antonello']
+console.log(two.constructor === Array);
+
+var three = [[],[],{},"antonello",3,function(){}]
+console.log(three.constructor === Array);
+
+
+
